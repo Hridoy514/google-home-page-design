@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+section header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+section header ul li a{
+    text-decoration: none;
+    color: black;
+}
+section header ul li button{
+    border: none;
+    outline: none;
+    background-color: #4584ef;
+    color: white;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.main{
+    width: 580px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.main .search-box{
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+.main .search-box input{
+    width: 98%;
+    padding: 13px;
+    padding-left: 51px;
+    padding-right: 40px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+}
+section .main .search-box .icon{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 31px;
+    pointer-events: none;
+}
+section .main .buttons{
+    margin-top: 20px;
+}
+section .main .buttons button{
+    margin: 0 7px;
+    padding: 12px 30px;
+    font-size: 14px;
+    border: none;
+    color: #555;
+    border: 1px solid transparent;
+    cursor: pointer;
+    outline: none;
+}
+section .main .buttons button:hover{
+    background-color: #8a8686;
+    color: white;
+}
+section .main .lang{
+    margin-top: 20px;
+}
+section .main .lang a{
+    text-decoration: none;
+    color: #4584ef;
+}
+section .main .lang a:hover{
+    text-decoration: underline;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.footer .row{
+    display: flex;
+    justify-content: space-between;
+}
+.row div ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #5f6368;
+}
+.row div ul li:hover{
+    text-decoration: underline;
+}
+.row div ul{
+    display: flex;
+}
+
+
+/*Desktop*/
+@media (min-width:1024px){
+
+}
+
+/*Tablet View*/
+@media (min-width:769px) and (max-width:1023px){
+    section header ul li button{
+        background-color: tomato;
+    }
+}
+
+
+
+/*Mobile View*/
+@media (max-width:768px){
+    section .main .searchbox .search{
+        width: 78%;
+    }
+    section .main .searchbox .icons{
+        width: 84%;
+    }
+    section .footer .row ul{
+        display: block;
+    }
+    section header ul li button{
+        background-color: blue;
+    }
+}
